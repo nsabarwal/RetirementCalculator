@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C995CD762AC4826700BC1452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C995CD752AC4826700BC1452 /* AppDelegate.swift */; };
-		C995CD782AC4826700BC1452 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C995CD772AC4826700BC1452 /* SceneDelegate.swift */; };
 		C995CD7A2AC4826700BC1452 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C995CD792AC4826700BC1452 /* ViewController.swift */; };
 		C995CD7D2AC4826700BC1452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C995CD7B2AC4826700BC1452 /* Main.storyboard */; };
 		C995CD7F2AC4826700BC1452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C995CD7E2AC4826700BC1452 /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		C995CD722AC4826700BC1452 /* RetirementCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetirementCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C995CD752AC4826700BC1452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C995CD772AC4826700BC1452 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C995CD792AC4826700BC1452 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C995CD7C2AC4826700BC1452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C995CD7E2AC4826700BC1452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				C995CD752AC4826700BC1452 /* AppDelegate.swift */,
-				C995CD772AC4826700BC1452 /* SceneDelegate.swift */,
 				C995CD792AC4826700BC1452 /* ViewController.swift */,
 				C995CD7B2AC4826700BC1452 /* Main.storyboard */,
 				C995CD7E2AC4826700BC1452 /* Assets.xcassets */,
@@ -260,7 +257,6 @@
 			files = (
 				C995CD7A2AC4826700BC1452 /* ViewController.swift in Sources */,
 				C995CD762AC4826700BC1452 /* AppDelegate.swift in Sources */,
-				C995CD782AC4826700BC1452 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
