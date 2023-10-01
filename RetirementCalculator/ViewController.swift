@@ -13,6 +13,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var retirementAgeTextField: UITextField!
+    @IBOutlet weak var monthlyInvestmentTextField: UITextField!
+    @IBOutlet weak var interestRateTextField: UITextField!
+    @IBOutlet weak var savingsTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,11 @@ class ViewController: UIViewController {
         
         let currentAge = Int(ageTextField.text ?? "") ?? 0
         let retirementAge = Int(retirementAgeTextField.text ?? "") ?? 0
+        let monthlyInvestment = Double(monthlyInvestmentTextField.text ?? "") ?? 0.0
+        let currentSavings = Double(savingsTextField.text ?? "") ?? 0.0
+        let interestRate = Double(interestRateTextField.text ?? "") ?? 0.0
+        
+        resultLabel.text = "If you save $\(monthlyInvestment) every month for \(retirementAge - currentAge) years, and invest that money plus your current investment of \(currentSavings) at \(interestRate)% annual interest rate, you will have $X by the time you are \(retirementAge)"
         
         let properties = ["current_age": String(currentAge),
                           "retirement_age": String(retirementAge)]

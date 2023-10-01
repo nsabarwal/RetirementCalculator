@@ -51,10 +51,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter some values to calculate your retirement amount." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGv-go-q2d">
-                                <rect key="frame" x="20" y="307" width="353" height="82"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="ey9-8V-mWs"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="307" width="353" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,7 +85,11 @@
                     </view>
                     <connections>
                         <outlet property="ageTextField" destination="sb4-bF-JpW" id="Gfh-L4-tfq"/>
+                        <outlet property="interestRateTextField" destination="w7e-AF-aOn" id="CvW-tR-CoC"/>
+                        <outlet property="monthlyInvestmentTextField" destination="YwR-pR-gO7" id="nSw-cf-USx"/>
+                        <outlet property="resultLabel" destination="QGv-go-q2d" id="uPb-az-gRq"/>
                         <outlet property="retirementAgeTextField" destination="Tlz-Yx-M3f" id="A75-bV-ePU"/>
+                        <outlet property="savingsTextField" destination="7bF-Bx-sNl" id="5Od-WH-hdG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bM-YH-QR4" sceneMemberID="firstResponder"/>
