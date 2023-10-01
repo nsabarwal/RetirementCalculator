@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func actionCalculate(_ sender: UIButton) {
+    @IBAction private func actionCalculate(_ sender: UIButton) {
         // Crashes.generateTestCrash()
         
         let currentAge = Int(ageTextField.text ?? "") ?? 0
@@ -40,11 +40,18 @@ class ViewController: UIViewController {
         let currentSavings = Double(savingsTextField.text ?? "") ?? 0.0
         let interestRate = Double(interestRateTextField.text ?? "") ?? 0.0
         
-        resultLabel.text = "If you save $\(monthlyInvestment) every month for \(retirementAge - currentAge) years, and invest that money plus your current investment of \(currentSavings) at \(interestRate)% annual interest rate, you will have $X by the time you are \(retirementAge)"
+        let retirementAmount = calculateRetirementAmount()
+        
+        resultLabel.text = "If you save $\(monthlyInvestment) every month for \(retirementAge - currentAge) years, and invest that money plus your current investment of \(currentSavings) at \(interestRate)% annual interest rate, you will have $\(retirementAmount) by the time you are \(retirementAge)"
         
         let properties = ["current_age": String(currentAge),
                           "retirement_age": String(retirementAge)]
         Analytics.trackEvent("calculate_retirement_calculated", withProperties: properties)
+    }
+    
+    private func calculateRetirementAmount() -> Double {
+        //write retirement amount logic here
+        1000
     }
 }
 
