@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func actionCalculate(_ sender: UIButton) {
+        // This is to generate crash through crashlytics
         // Crashes.generateTestCrash()
         
         let currentAge = Int(ageTextField.text ?? "") ?? 0
