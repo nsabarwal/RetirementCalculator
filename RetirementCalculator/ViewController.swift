@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         Analytics.trackEvent("navigated_to_calculator")
         if Crashes.hasCrashedInLastSession {
             //show alert to apologize when the user opens the app after the last crash of the app
+            //This is through crashlytics
         }
     }
 
