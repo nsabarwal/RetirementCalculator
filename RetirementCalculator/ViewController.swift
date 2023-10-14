@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         }
     }
 
+    //MARK: - Button action -
     @IBAction private func actionCalculate(_ sender: UIButton) {
         // This is to generate crash through crashlytics
         // Crashes.generateTestCrash()
