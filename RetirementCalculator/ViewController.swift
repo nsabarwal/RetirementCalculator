@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var savingsTextField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
+    //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
