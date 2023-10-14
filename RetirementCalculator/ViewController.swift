@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         let interestRate = Double(interestRateTextField.text ?? "") ?? 0.0
         
         let retirementAmount = calculateRetirementAmount()
-        
+        //Setting result text
         resultLabel.text = "If you save $\(monthlyInvestment) every month for \(retirementAge - currentAge) years, and invest that money plus your current investment of \(currentSavings) at \(interestRate)% annual interest rate, you will have $\(retirementAmount) by the time you are \(retirementAge)"
         
         let properties = ["current_age": String(currentAge),
